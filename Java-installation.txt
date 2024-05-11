@@ -30,3 +30,5 @@ which java
 
 echo $JAVA_HOME
 
+java -version
+

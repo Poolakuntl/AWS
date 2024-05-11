@@ -3,24 +3,29 @@
 
 yum install wget
 
-cd /opt  ------create directory ----- mkdir maven
+cd /opt                     ------create directory ----- mkdir mvn
 
-cd/opt/maven
+cd/opt/mvn
 
 Go to browser
 -------------
 
 1.https://maven.apache.org/download.cgi
-2.apache-maven-3.9.6-bin.tar.gz ---------right click --copy link address
+2.apache-maven-3.9.6-bin.tar.gz            ---------right click --copy link address
 
 linux
 -----
 
 wget ---paste link--- tar.gz file will be created
 
-tar xzf apache-maven-3.9.6-bin.tar.gz    -----ll
+1.tar xzf apache-maven-3.9.6-bin.tar.gz    -----for tar file
+                       or
+1.unzip apache-maven-3.9.6-bin.zip         ------for zip file
 
-ln -s apache-maven-3.9.6 maven           ------To create link to maven
+
+2.ln -s apache-maven-3.9.6 maven           ------To create link to maven
+                    or
+2.mv apache-maven-3.9.6 maven
 
 
 
@@ -29,11 +34,12 @@ vi /etc/profile.d/maven.sh
 ADD BELOW LINES
 ---------------
 
-export M2_HOME=/opt/maven
+export M2_HOME=/opt/mvn/maven
 export PATH=${M2_HOME}/bin:${PATH} --------:wq!
 
 update
 -------
+chmod 777 maven.sh                 ----------To give full permission
 
 source /etc/profile.d/maven.sh
 
@@ -41,11 +47,11 @@ set up path
 -----------
 vi /etc/profile
 
-export MAVEN_HOME=/user/bin/maven -------:wq!
+export MAVEN_HOME=/user/bin/maven   -------:wq!
 
 source /etc/profile
 
-mvn -version
+mvn --version
 
 
 
