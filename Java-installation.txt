@@ -1,0 +1,32 @@
+                                                 Java Installation
+
+yum install java-1.8.0-openjdk -y
+
+
+yum install java-1.8.0-openjdk-devel -y
+
+Set Path
+---------
+alternatives --config java
+
+/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.412.b08-2.el9.x86_64   ------path for java
+
+
+vi /etc/profile.d/java.sh
+
+ADD BELOW LINES
+---------------
+
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.412.b08-2.el9.x86_64
+export PATH=${JAVA_HOME}/bin:${PATH}
+
+
+update
+-------
+
+source /etc/profile.d/java.sh
+
+which java
+
+echo $JAVA_HOME
+

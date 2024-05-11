@@ -1,0 +1,24 @@
+What is Linux and why is it so popular?
+Linux is a free and open-source operating system kernel first released by Linus Torvalds in 1991. It forms the core system software that manages hardware resources, runs applications, and interfaces with peripheral devices. Linux is popular due to its robustness, stability, and flexibility. It is free to use and modify under its license, making it a preferred choice for servers, desktops, and embedded systems. Its open-source nature allows developers to customize and secure their environments as needed.
+What is BASH?
+BASH (Bourne Again SHell) is a command processor that typically runs in a text window where the user types commands that cause actions. BASH can also read commands from a file, called a script. It is the most common shell used on Linux and UNIX systems, known for its powerful programming features and user-friendly operations.
+What is the core of the Linux operating system?
+The core of Linux, known as the kernel, handles all major activities of the OS. It includes managing hardware devices, managing memory, and facilitating communications between hardware and software components. The kernel is the lowest level of the OS, interfacing directly with the underlying hardware.
+What is the basic difference between UNIX and Linux operating systems?
+The primary difference is that UNIX is a proprietary system originally developed in the 1970s by AT&T and various commercial vendors, while Linux is free, open-source, and was developed to mimic UNIX. Linux offers greater compatibility with various types of hardware and more flexibility for customization.
+What is LILO?
+LILO (Linux Loader) is a bootloader for Linux that is used to load the Linux operating system into memory when the computer is started. Although now largely replaced by GRUB (GRand Unified Bootloader), LILO was once popular for its simplicity and effectiveness in dual-boot scenarios.
+What is an INODE?
+An inode is a data structure on a filesystem on Unix-like operating systems that stores information about a file or a directory. The inode contains metadata about a file, such as its size, owner, permissions, and location on disk, but not the filename or the actual data.
+What is swap space?
+Swap space is a portion of a hard disk drive (HDD) set aside for use as virtual memory by an operating system, which can use it as an overflow area for when the system’s RAM is full. Swapping allows larger applications to run on systems with less physical memory by managing memory allocation more flexibly.
+What is the advantage of open source?
+Open source software provides numerous advantages: transparency, flexibility, cost efficiency, and community support. Users can examine the source code to understand how the software works, contribute improvements, customize applications to fit their needs, and benefit from innovations shared by a global developer community.
+What is the difference between BASH and DOS?
+BASH (for Unix/Linux) and DOS (Disk Operating System, used in early Windows environments) shells are both command-line interfaces, but they use different command syntax and capabilities. BASH supports scripting, job control, and has more powerful built-in commands, whereas DOS commands are simpler and more limited in scope.
+What is the difference between TCP and UDP?
+TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both network protocols used for sending packets over the Internet. TCP is connection-oriented, reliable, and ensures that all packets are delivered in order and without errors. UDP is connectionless, has lower overhead, and does not guarantee delivery, order, or error-free communications.
+What is the importance of the GNU Project?
+Initiated by Richard Stallman in 1983, the GNU Project aimed to create a completely free Unix-like operating system, termed GNU (GNU's Not Unix). It has been crucial in the development of free software and the legal underpinning for free software licenses, like the GNU General Public License (GPL), significantly influencing the growth of open-source software.
+How does DNS resolution work?
+DNS (Domain Name System) resolution involves translating human-friendly domain names (like www.example.com) into IP addresses that computers use to identify each other on the network. When you enter a URL in your browser, your device queries DNS servers to get the corresponding IP address. If the DNS server doesn't have the record, it queries other servers until the correct IP is found. Once the IP address is returned to your device, your browser can communicate with the target server to access the requested website.
