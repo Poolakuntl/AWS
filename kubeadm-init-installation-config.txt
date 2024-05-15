@@ -1,0 +1,20 @@
+
+Modify the containerd Configuration
+-----------------------------------
+
+1.vi /etc/containerd/config.toml
+
+# disabled_plugins = ["cri"]
+
+[grpc]
+  address = "/run/containerd/containerd.sock"
+  uid = 0
+  gid = 0
+
+2.systemctl restart containerd
+3.systemctl status containerd
+
+Retry Kubernetes Initialization
+-------------------------------
+
+4.kubeadm init

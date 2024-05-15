@@ -1,0 +1,98 @@
+Youtube link:-  https://www.youtube.com/watch?v=4cG7dWKbrC8
+
+
+
+
+
+pipeline {
+    agent any
+    
+    tools{
+        maven "M3"
+    }
+
+    stages {
+        stage('Clone') {
+            steps {
+                git 'https://github.com/ashokitschool/maven-web-app.git'
+            }
+        }
+         stage('Build') {
+            steps {
+                sh 'mvn clean package'
+            }
+        }
+         stage('docker image') {
+            steps {
+                sh 'docker build -t revanth .'
+            }
+        }
+         stage('deploy') {
+            steps {
+                
+                sh 'docker run -d -p 9090:8080 revanth'
+                
+            }
+
+
+
+        }
+    }
+}
+
+
+                                Second format
+
+
+pipeline {
+    agent any
+    
+    tools{
+        maven "M3"
+    }
+
+    stages {
+        stage('Clone') {
+            steps {
+                git 'https://github.com/rohith458/Revanth-project.git'
+            }
+        }
+         stage('Build') {
+            steps {
+                sh 'mvn clean package'
+            }
+        }
+         stage('docker image') {
+            steps {
+                sh 'docker build -t revanth .'
+            }
+        }
+         stage('deploy') {
+            steps {
+                sh 'docker stop remu'
+                sh 'docker rm remu'
+                sh 'docker run -d -p 9090:8080 --name remu revanth'
+                
+            }
+
+
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

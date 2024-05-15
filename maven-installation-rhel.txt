@@ -18,7 +18,7 @@ linux
 
 wget ---paste link--- tar.gz file will be created
 
-1.tar xzf apache-maven-3.9.6-bin.tar.gz    -----for tar file
+1.tar xzf apache-maven-3.9.6-bin.tar.gz    -----for tar file xtract
                        or
 1.unzip apache-maven-3.9.6-bin.zip         ------for zip file
 
